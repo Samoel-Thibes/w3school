@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaçamento de  texto CSS</title>
+</head>
+<style>
+    body {
+        background-color: rgb(66, 140, 115);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    code {
+        font-weight: bolder;
+        font-size: 15px;
+        color: rgb(201, 33, 17);
+        background-color: gainsboro;
+        padding: 0px 4px;
+    }
+
+    div {
+        width: 500px;
+        background-color: gray;
+        padding: 2px 3%;
+        border: solid rgb(58, 60, 54);
+        border-radius: 6px;
+        text-align: justify;
+    }
+
+   .indent {
+        text-indent:50px;
+    }
+    div h2 {
+        letter-spacing: 8px;
+    }
+    .lspacing {
+      letter-spacing: -2px;
+    }
+    .pequena {
+        line-height: 0.7;
+    }
+    .grande {
+        line-height: 1.8;
+    }
+    .um {
+        word-spacing: 20px;
+    }
+    .dois {
+        word-spacing: -7px;
+    }
+    .wspace {
+        white-space:nowrap;
+        overflow-x: auto;
+    }
+</style>
+<body>
+    <main>
+        <h1>Espaçamento de texto</h1>
+        <p>Neste capítulo você Aprenderá sobre as seguintes propriedades:</p>
+        <ul>
+            <li><code>text-indent</code></li>
+            <li><code>letter-spacing</code></li>
+            <li><code>line-height</code></li>
+            <li><code>word-spacing</code></li>
+            <li><code>white-space</code></li>
+        </ul>
+        <hr><br>
+        <h2>Recuo de texto</h2>
+        <p>A <code>text-indent</code> propriedade é usada para especificar o recuo da primeira linha de um texto:</p>
+            <h1>Usando recuo de texto</h1>
+            <div>
+            <p class="indent">Em minha juventude e vulnerabilidade, meu pai me deu alguns conselhos que venho pensando deste então.'Sempre que você sentri vontade de criticar alguém', ele me disse, 'lembre-se de que todas as pessoas neste mundo não tiveram as vantagens que você teve.'</p>
+        </div>
+        <hr><br>
+        <h2>Espaçamento entre letras</h2>
+        <p>A <code>letter-spacing</code> propriedae é usada para especificar o espaço entre os caracteres em um texto</p>
+        <p>O exemplo a seguir demonstra como aumentar ou diminuir o espaço entre os caracteres</p>
+        <div>
+          <h2>Este é o título 1</h2>
+          <h3 class="lspacing">Este é o título 2</h3>
+        </div>
+        <hr><br>
+        <h2>Altura da linha</h2>
+        <p>A <code>line-height</code> propriedade é usada para especificar o espaço entre as linhas:</p>
+        <div>
+            <h3>Usando altura de linha</h3>
+            <p>Este é um parágrafo com altura de linha padrão.A altura da linha padrão na maioria dos navegadores é cerca de 110% a 120%</p>
+            <p class="pequena">Este é um parágrafo com uma altura de linha menor. <br>Este é um parágrafo com uma altura de linha menor.</p>
+            <p class="grande">Este é um parágrafo com uma altura de linha maior. <br> Este é um parágrfo com uma altura de linha maior.</p>
+        </div>
+        <hr><br>
+        <h2>Espaçamento entre palavras</h2>
+        <p>A <code>word-spacing</code> propriedade é usada para especificar o espaço entre as palavras em um texto.</p>
+        <p>O exemplo a seguir demonstra como aumentar ou diminuir o espaço entre as palavras:</p>
+        <div>
+            <h3>Usando espaçamento entre palavras</h3>
+            <p>Este é um parágrafo com espaçamento normal entre palavras</p>
+            <p class="um">Este é um parágrafo com espaçamento maior entre palavras</p>
+            <p class="dois
+            ">Este é um parágrafo com Espaçamento menor entre palavras</p>
+        </div>
+        <hr><br>
+        <h2>Espaço em branco</h2>
+        <p>A <code>white-space</code> propriedade especifica como o espaço em branco dentro de um elemento é tratado. <br>
+          Este Exemplo demontra como desabilitar a quebra automática de texto dentro de um elemento:
+          <p class="wspace">
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            This is some text that will not wrap.
+            </p>
+        </p>
+      </main>
+</body>
+</html>

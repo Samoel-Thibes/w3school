@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformação de texto CSS</title>
+  <style>
+     body {
+        background-color:#1d2a35;
+        color: #dddd;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-left: 40px;
+     }
+
+    code {
+        color:red;
+        background-color: #dddd;
+        font-weight: bolder;
+        padding: 0px 3px;
+      }
+
+      div {
+          width: 500px;
+          height: auto;
+          background-color: whitesmoke;
+          color:  #1d2a35;
+          padding: 2px 4px;
+          border-radius: 7px;
+          border: #8ea0b2 solid 4px;
+          margin: auto;
+      }
+      div  {
+          text-align: center;
+      }
+      .uppercase {
+          text-transform: uppercase;
+      }
+      .lowercase {
+          text-transform: lowercase;
+      }
+
+      .capitalize {
+          text-transform: capitalize;
+      }
+  </style>
+</head>
+<body>
+    <h1>Transformação de texto CSS</h1>
+    <p>A <code>text-tranform</code> propriedade é usada para especificar letras maiúsculas e minúsculas em um texto.</p>
+    <p>Pode ser usado para tranformr tudo em letras maiúsculas ou minúsculas, ou colocar a primeira letra de cada palavra em maiúscula:</p>
+    <div>
+        <h2>Usando a propriedade text-transform</h2>
+        <p class="uppercase">Este texto é transformado em maiúscula</p>
+        <p class="lowercase">este texto é transformado em letras minúsculas.</p>
+        <p class="capitalize">este texto está em maiúscula.</p>
+        <hr>
+    </div>
+</body>
+</html>

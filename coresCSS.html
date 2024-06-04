@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cores CSS</title>
+  <style>
+    div p {
+        color: rgb(9, 9, 9);
+        border: 1px solid black;
+        text-align: justify;
+        padding: 2px 4px;
+        width:120px ;
+        margin: auto;
+    }
+    p ~ h3 {
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Nomes de cores CSS </h1>
+  <p>Em CSS, uma cor pode ser especificada usando um nome de cor predefinido.</p>
+  <div>
+        <p style="background: tomato;">Tomato</p>
+        <p style="background: dodgerblue;">DodgerBlue</p>
+        <p style="background: gray;">Gray</p>
+        <p style="background: violet;">Violet</p>
+        <p style="background: orange;">Orange</p>
+        <p style="background: mediumseagreen;">MediumSeaGreen</p>
+        <p style="background: slateblue;">SlateBlue</p>
+        <p style="background: lightgrey; color: black;">LightGray</p>
+  </div>
+    <h2>Cor de fundo CSS</h2>
+    <p>você pode definir a cor de fundo dos elementos HTML:</p>
+      <h3 style="background-color: dodgerblue; color: white;padding: 1em; text-align: center;">Olá Mundo</h3>
+      <p style="background-color: tomato; color: white; padding: 4px 7px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, eligendi! Reprehenderit fugiat reiciendis laudantium commodi adipisci? Totam, ipsa pariatur voluptatum quas non quae aliquam incidunt expedita sapiente tenetur consectetur reprehenderit?</p>
+
+      <h4>Cor do texto CSS</h4>
+      <p>Você pode definir a cor do texto:</p>
+      <h2 style="color: red;">Olá Mundo</h2>
+      <p style="color: blue; font-size: large;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio delectus quis maiores laborum doloribus blanditiis quasi ipsam nisi non amet beatae dolores, repellat id quidem harum, ratione veritatis quae.</p>
+
+      <h2>Cor da borda CSS</h2>
+        <p>você pode definir a cor das bordas:</p>
+        <h3 style="border: 3px solid red;">Olá Mundo</h3>
+        <h3 style="border: 3px solid blue;">Olá Mundo</h3>
+        <h3 style="border: 3px solid palevioletred;">Olá Mundo</h3>
+        <br>
+        <h2>Valores de cores CSS</h2>
+        <p>Em CSS, as cores também podem ser especificadas usando Valores rgb, valores HEX, valores HSL, valores RGBA e valores HSLA:</p>
+        <p>Igual ao nome da cor "Tomate":</p>
+          <h2 style="background-color:RGB(255, 99, 71);">RGB(255, 99, 71)</h2>
+          <h2 style="background-color: #ff6347;">#ff6347</h2>
+          <h2 style="background: hsl(9, 100%, 64%);">hsl(9, 100% 64%)</h2>
+          <br>
+          <p>Igual ao nome da cor "Tomate", mas 50% tranparete:</p>
+          <h4 style="background: rgba(255, 99, 71, 0.5);">rgb(255, 99, 71, 0.5)</h4>
+          <h4 style="background-color: hsl(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h4>
+</body>
+</html>

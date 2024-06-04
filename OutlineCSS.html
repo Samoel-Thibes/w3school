@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline CSS</title>
+  <style>
+      body {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        background-color: rgba(3, 3, 3, 0.742);
+        color: white;
+      }
+      code {
+        background-color: bisque;
+        color: red;
+      }
+  </style>
+</head>
+<body>
+  <h1>Outline CSS</h1>
+  <hr>
+  <p>Um contorno é uma linha desenhada fora de borda do elemento.</p>
+<hr>
+<div>
+  Este elemento possui uma borda preta e um contorno verde com largura de 10px.
+</div>
+<hr>
+<h2>Esboço CSS</h2>
+<p>Um contorno é uma linha desenhada ao redor dos elementos, FORA das bordas, para fazer o elemento "se destacar".</p>
+<p>CSS tem as seguintes propriedades de contorno:</p>
+<ul>
+  <li><code>outline-style</code></li>
+  <li><code>outline-color</code></li>
+  <li><code>outline-width</code></li>
+  <li><code>outline-offset</code></li>
+  <li><code>outline</code></li>
+</ul>
+  <p>
+    <strong>Nota:</strong>O contorno difere das bordas ! Ao contrário da borda, o contorno é desenhado fora da borda do elemento e pode se sobrepor a outra conteúdo. Além disso, o contorno NÃO faz parte das dimensões do elemento; a largura e altura total do elemento não são afetadas pela largura do contorno.
+  </p>
+  <hr>
+  <br>
+  <h2>Estilo do Outline CSS</h2>
+  <p>A <code>outline-style</code> pripriedade especifica o estilo do contorno e pode ter um dos seguintes valores:</p>
+  <ul>
+      <li><code>dotted</code> - Define um contorno pontilhado</li>
+      <li><code>dashed</code> - Define um contorno tracejado</li>
+      <li><code>solid</code> - Define um contorno sólid</li>
+      <li><code>double</code> - define um contorno duplo</li>
+      <li><code>groove</code> - Define um contorno ranhurado 3D</li>
+      <li><code>ridge</code> - Define um contorno estriado 3D</li>
+      <li><code>inset</code> - Define um contorno incial 3D</li>
+      <li><code>outset</code> - Define um contorno inicial 3D </li>
+      <li><code>none</code> - Não define nhum contono</li>
+      <li><code>hidden</code>  - Define um contorno oculto</li>
+  </ul>
+  <p>O Exemplo a seguir mostra os diferentes <code>outline-style</code>valores:</p>
+  <h2>A propriedade de estilo de contorno</h2>
+    <p style="outline:dotted red;">Um contorno pontilhado</p>
+    <p style="outline: dashed red;">Um contorno tracejado</p>
+    <p style="outline: solid red;">Um contorno sólido</p>
+    <p style="outline: double red;">Um contorno duplo</p>
+    <p style="outline: groove red;">Um contorno de sulco. O efeito depende do valor da cor do contorno.</p>
+    <p style="outline: ridge red;">Um contorno de cume. O efeito depende o valor da cor do contorno</p>
+    <p style="outline: inset red;">Um esboço inserido. O efeito depende do valor da cor do contorno</p>
+    <p style="outline: outset red;">Um esboço inicial. O feito depende do valor da cor do contorno.</p>
+    <h2>Esboço CSS - propriedade abreviada</h2>
+    <p>A <code>outline</code>é uma propriedade abreviada para definir as seguintes propriedades de estrutura detópicos individuais:</p>
+    <ul>
+      <li><code>outline-width</code></li>
+      <li><code>outline-style</code> (obrigatório)</li>
+      <li><code>outline-color</code></li>
+    </ul>
+    <p>A <code>outline</code> propriedade é especificada como um, dois ou três valores da lsita acima. A ordem dos valores não importa.</p>
+    <p>O exemplo a seguir mostra alguns contornos especificados com a <code>outline</code> propriedade abreviada:</p>
+    <p style="outline: dashed;">Um contorno tracejado</p>
+    <p style="outline: dotted red;">Um contorno vermelho pontilhados</p>
+    <p style="outline: 5px solid yellow;">Um contorno amarelo sólido de 5px</p>
+    <p style="outline: thick ridge pink;">Um contorno rosa grosso
+    </p>
+  <hr><br>
+  <h2>Deslocamento de contorno CSS</h2>
+  <p>A <code>outline-offset</code> propriedade adiciona espaço entre um contorno e a borda/borda de um elemento. O espaço entre um elemento e seu contorno é trasparente</p>
+  <p>O exemplo a seguir especifica um contorno de 15px fora da borda:</p><br>
+  <p style="border: 2px solid black; outline: 2px;outline: 1px solid red; outline-offset: 15px;  width: 300px; margin:auto; background-color: yellow; color: black;">Este exemplo especifica um contorno de 15px fora da borda</p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links de estilo</title>
+  <style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    code {
+        background-color: rgba(128, 128, 128, 0.499);
+        color: red;
+        font-weight: bold;
+        padding: 0px 3px;
+    }
+    div {
+        width: 400px;
+        background-color: bisque;
+        padding: 1px 20px;
+        margin-left: 50px;
+        box-sizing: border-box;
+    }
+    .link:link{
+        color:red
+    }
+    .link:hover {
+        color:green;
+    }
+    .link:hover {
+        color: rgb(112, 11, 207);
+        background-color:rgba(138, 133, 133, 0.441);
+        padding: 4px 8px;
+    }
+
+    .link:active {
+        color: blue;
+    }
+    .botão:link, .botão:visited {
+      background-color: #f44336;
+      color: white;
+      padding:  14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;   
+    }
+    .botão:hover, botão:active {
+        background-color: red;
+    }
+  </style>
+</head>
+<body>
+    <h1>Links de estilo</h1>
+    <p>Os links podem ser estilizados com qualquer propriedade CSS (por exemplo <code>color</code>, <code>font-family</code>, <code>background. etc)</code></p>
+        <div style="margin: auto;">
+          <h3>Estilize um link com uma cor</h3>
+            <a href="#" style="color: coral; font-weight: bolder;background-color: bisque; margin: auto; display: inline-block;">link</a>
+        </div>
+        <p>Além disso, os links ter estilos diferentes dependendo do estado em que se encontram. <br><br>Os quatros estados de links são:</p>
+        <ul>
+          <li><code>a:link</code> - um link normal e não visitado</li>
+          <li><code>a:visited -</code> um link que o usuário visitou</li>
+          <li><code>a:hover</code> - um link quando o usuário passa o mouse sobre ele</li>
+          <li><code>a:active -</code> um link no momento em que é clicado</li>
+        </ul><hr><br>
+        <div class="c1">
+          <h2>Estilize um link dependendo do estado</h2>
+            <a class="link" href="#">Este é um link</a><br>
+            <p><strong>Nota:</strong> <code>a:hover</code> DEVE vir depois de <code>a:link</code> e a <code>a:visited</code> na definição CSS para ser eficaz</p>
+      
+        </div>
+        <h4>Botões de link</h4>
+        <p>Este exemplo demonstra um exemplo mais avançado onde combinamos várias propriedades CSS para exibir links como caixas/botões:</p>
+       <a class="botão
+       " href="#">Este é um link</a>
+</html>

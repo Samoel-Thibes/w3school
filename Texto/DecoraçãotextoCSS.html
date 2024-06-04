@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoração de texto CSS</title>
+  <style>
+      body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        font-size: 16px;
+        background-image: linear-gradient(rgba(36, 201, 36, 0.814), rgb(86, 195, 101), rgba(53, 99, 64, 0.762)
+        );
+        color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      code {
+          background-color: lightgray;
+          color: red;
+          padding: 0px 2px;
+      }
+      div {
+          width: 600px;
+          background-color: rgb(255, 255, 255);
+          color: black;
+          padding: 5px 20px;
+          text-align: left;
+          border-radius: 20px;
+      }
+
+      .dtexto1 h1 {
+          text-decoration: overline;
+          text-decoration-color: rgb(221, 19, 19);
+      }
+      .dtexto1 h2 {
+          text-decoration: line-through;
+          text-decoration-color: blue;
+      }
+
+      .dtexto1 h3 {
+          text-decoration: underline;
+          text-decoration-color: green;
+      }
+
+      .dtexto1 h4 {
+          text-decoration: overline underline;
+          text-decoration-color: rgb(251, 255, 35);
+      }
+
+      .dtexto h1 {
+          text-decoration: overline;
+      }
+      .dtexto h2 {
+          text-decoration: line-through;
+      }
+
+      .dtexto h3 {
+          text-decoration: underline;
+      }
+
+      .dtexto h4 {
+          text-decoration: overline underline;}
+        .nota {
+          background-color: #fff4a3;
+          width: 100%;
+          padding: 3px;
+          box-sizing: border-box;
+
+        }
+
+        .dtexto2 h1 {
+          text-decoration: underline;
+            text-decoration-style: solid;
+        }
+        .dtexto2 h2 {
+            text-decoration: underline;
+            text-decoration-style: double;
+        }
+        .dtexto2 h3 {
+          text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+        .dtexto2 p {
+          text-decoration: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: red;
+        }
+      
+        a {
+            text-decoration: none;
+            color: rgb(105, 214, 209);
+            background-color: rgba(220, 20, 60, 0.575);
+            padding: 4px 6px;
+        }
+
+        a:hover {
+            background-color: red;
+            color: wheat;
+        }
+
+  </style>
+</head>
+<body>
+  <h1>Decoração de texto </h1>
+  <p>Neste capítulo você aprendera sobre as seguintes propriedades:</p><ul>
+      <li><code>text-decoration-line</code></li>
+      <li><code>text-decoration-color</code></li>
+      <li><code>text-decoration-style</code></li>
+      <li><code>text-decoration-thickness</code></li>
+      <li><code>text-decoration</code></li>
+  </ul>
+  <hr><br>
+  <h2>Adicionar uma linha decorativa ao texto</h2>
+  <p>A <code>text-decoration-line</code>propriedade é usada para Adicionar uma linha de decoração ao texto.</p>
+  <p><strong>Dica:</strong> você pode combinar mais de uma valor, como sobrekinear e sublinhar, para exibir linhas acima e abaixo de um texto.</p>
+  <div class="dtexto">
+      <h1>Decoração de texto sobreposta</h2>
+      <h2>Decoração de texto linear</h2>
+      <h3>Sublinhar a decoração do texto</h3>
+      <h4>Sublinhar e sublinhar a decoração do texto</h4>
+      <p class="nota"><strong>Nota:</strong>Não é recomendado sublinhar texto que não seja link, pois muitas vezes confude o leitor</p>
+  </div>
+  <hr><br>
+  <h2>Especifique uma cor para a linha de decoração</h2>
+    <p>A <code>text-decoration-color</code> propriedade é utilizada para definir a cor da linha de decoração.</p>
+      <div class="dtexto1">
+        <h1>Decoração de texto sobreposta</h2>
+        <h3>Decoração de texto linear</h3>
+        <h4>sublinhado e decoração do texto</h4>
+        <p>Sublinhar e sublinhar a decorção do texto.</p>
+      </div>
+      <hr><br>
+      <h2>Especifique um estilo para a linha de decorção</h2><p>A <code>text-decoration-style</code> propriedade é utilizada para definir o estilo da linha de decoração.</p>
+      <div class="dtexto2">
+        <h1>Cabeçalho 1</h1>
+        <h2>título 2</h2>
+        <h3>título 3</h3>
+        <p>Um parágrafo.</p>
+      </div>
+      <hr><br>
+      <h2>A propriedade abreviada</h2>
+      <p>A <code>text-decoration</code> propriedade é uma propriedade abreviada para:</p>
+      <ul>
+        <li><code>text-decoration-line</code> (obrigatório)</li>
+        <li><code>text-decoration-color</code> (opcional)</li>
+        <li><code>text-decoration-style</code> (opcional)</li>
+        <li><code>text-decoration-thickness</code> (opcional)</li>
+      </ul>
+      <hr><br>
+      <h2>Uma pequena dica</h2>
+      <p>Todoss os links em HTML são siblinhados por padrão. Às vezes você vê que os links são estilizados sem sublinhado. O <code>text-decoration: none;</code> é usado par remover o sublinhado dos links, assim:</p>
+       <h4>Usando decoração de texto: nenhuma</h4>
+       <p>Um link sem sublinhado: <a href="#">Links.com</a></p>
+</body>
+</html>

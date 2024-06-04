@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos de fundo CSS</title>
+  <style>
+    * {
+      font-size: 1.1em;
+    }
+     h1, li {
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      code {
+          color: red;
+      }
+
+      .bloco, .bloco2 {
+        display: flex;
+        
+  
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .bloco p{
+          background-color: green;
+            margin: 2px;
+            padding: 20px;
+            display: inline;
+            border: solid 1px white;
+      }
+      .bloco2 p {
+            margin: 2px;
+            padding: 20px;
+            display: inline;
+            border: solid 1px rgb(0, 0, 0);
+      }
+  
+  </style>
+</head>
+<body>
+  <h1>Propriedades de plano de fundo CSS:</h1>
+  <ul>
+    <li><code>backgroud-color</code></li>
+    <li><code>background-image</code></li>
+    <li><code>background-repeat</code></li>
+    <li><code>background-attachment</code></li>
+    <li><code>background-poasition</code></li>
+    <li><code>background</code> (propriedade abreviada)</li>
+  </ul> 
+    <h2>Opacidade/ transparência</h2>
+    <p>A <code>opacity</code> propriedae especifica a opacidade/transparência de um elemento. Pode assumir um valor de 0,0 a 1,0. quanto menor o valor, mais transparência</p>
+    <div class="bloco">
+      <p>opacidade 1</p>
+      <p style="opacity: 0.6;">opacidade 0,6</p>
+      <p style="opacity: 0.3;">opacidade 0,3</p>
+    </div>
+
+    <h2>transparência usando RGBA</h2>
+    <p>Sem aplicar opacidade aos elementos fillhos como o exemplo a cima.</p>
+
+      <div class="bloco2">
+          <p style="background-color: rgb(18, 128, 18, 0.1);">Opacidade de 10% </p>
+          <p style="background-color: rgba(00, 255, 00, 0.3);">Opacidae de 30%</p>
+          <p style="background-color: rgba(00, 255, 00, 0.5);">Opacidade de 60%</p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Configuração de altura e largura</title>
+  <style>
+      body {
+        background-color: #1d2a35;
+        color: #dddddd;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-left: 70px;
+      }
+      code {
+          font-family: 'Courier New', Courier, monospace;
+          background-color: #ff9999a5;
+          color: #fdfdfe;
+          padding: 2px 5px;
+      }
+      
+      div {
+        color: #1d2a35;
+      }
+
+  </style>
+</head>
+<body>
+  <h1>CSS Configuração de altura e largura</h1>
+  <p>As propriedades <code>height</code> e <code>width</code> são usadas para definir e a largura de um elemento</p>
+  <p>As propriedades de altura e largura não incluem preenchimento, borda ou margens. Ele define a altura/largura da área dentro do preecnhimento, borda e margem do elemento.</p>
+  <hr>
+  <br>
+  <h2>Valores de altura e largura CSS</h2>
+  <p>As propriedades <code>height</code> e  <code>width</code> podem ter os seguintes valores:</p>
+  <ul>
+    <li><code>auto</code> - Este é o padrão. O navegador calcula a altura e a largura</li>
+    <li><code>lenght</code> - Define a altura/largura em px, cm, etc.</li>
+    <li><code>%</code> - Define a altura/largura em porcentagem do bloco que contém</li>
+    <li><code>intial</code> - Define a altura/largura para seu valor padrão</li>
+    <li><code>inherit</code> - Altura/largura será herdada de seu valor pai</li>
+  </ul>
+  <hr>
+  <br>
+  <h2>Exemplo de altura e largura CSS</h2>
+    <div style="background-color: lightblue; width: 50%; height: 200px; margin-bottom: 30px;"
+    >Este elemento tem altura de 200 pixel e largura de 50%</div>
+    <div style=" background-color: rgb(97, 171, 236); width:500px; height: 100px;">
+      Este elemento tem altura de 100 pixel e largura de 500pixel
+    </div>
+      <p><strong>Nota:</strong>Lembre-se de que as pripriedades <code>height</code> e <code>width</code> não incluem preenchimento, bordas ou margens! Eles definem a altura/largura da área dentro do preenchimento, borda em margem do elemento!</p>
+      <h4>Configurando largura máxima</h4>
+      <p>A <code>max-width</code> propriedade é usada para definir a largura máxima de um elemento.</p>
+      <p>O <code>max-width</code> pode ser especificada em <i>valores</i> de comprimento, como px, cm, etc., ou em porcentagem (%) de bloco qie o contém, ou definido como nenhum (este é o padão. Significa que não há largura máxima).</p>
+      <p>O problema acima <code>div</code> ocorre quando a janela do navegador é menor que a alrgura do elemento (500px).O navegador então adiciona uma barra de rolagem horizontal à página.</p>
+      <p>Usar <code>max-width</code>, em vez disso, nesta situação, melhorará o manuseio de janelas pequenas pelo navegador.</p>
+      <p><strong>Dica:</strong> Arraste a janela do navegador para uma largura menor que 500px para ver a diferença entre as duas divs!</p>
+      <br>
+      <h2>Defina a largura máxima de um elemento</h2>
+      <div style="background-color: lightblue; height: 100px; max-width: 500px;">
+        Este elemento div tem altura de 100px  e largura máxima de 500px.
+      </div>
+      <p>
+        <strong>Nota:</strong>
+        Se por algum motivo você usar a <code>width</code> propriedade e a <code>max-width</code>proprieda; a <code>max-width</code> propriedade será usada( e a<code>width</code> propriedade será ignorada).
+      </p>
+
+</body>
+</html>

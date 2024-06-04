@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margens CSS</title>
+  <style>
+    * {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+  code {
+      background-color: rgba(128, 128, 128, 0.342);
+      padding:1px 6px;
+      color: crimson;
+      font-weight: bolder;
+      font-size: 15px;
+    }
+
+    body{
+        background-color: rgba(255, 127, 80, 0.633);
+    }
+    h1 {
+      background-color: azure;
+      width: 200px;
+      padding: 3px 2%;
+      margin: auto;
+      border-radius: 6px;
+    }
+    p {
+        background-color: aliceblue;
+        width: 400px;
+       padding: 6px 6px;
+      text-align: justify;
+    } 
+  </style>
+</head>
+<body>
+  <h1 >Margens CSS</h1>
+  <p>As margens são usadas para criar espaços ao redor dos elementos, fora de quiasquer bordas definidas.</p>
+  <hr>
+  <p style="display:block;border: 1px solid green; margin: 70px;" > Este Elemento tem uma margem de 70px</p>
+  <p>CSS possui proriedades para especcificar  margem de cada lado de um elemento:</p>
+  <ul>
+  <li><code>margin-top</code></li>
+  <li><code>margin-right</code></li>
+  <li><code>margin-bottom</code></li>
+  <li><code>margin-left</code></li></ul>
+  <p>Todas as proriedades de margem podem ter os seguitnes valores:</p>
+  <ul>
+  <li><code>auto -</code>o navegador calcula a margem</li>
+  <li><code>comprimento -</code> especifica uma margem em px,pt,cm, etc.</li>
+  <li><code>% -</code>especifica uma margem em% da largura do elemento que contém</li>
+  <li><code>inherit</code> especifica que a margem deve ser herdada do elemento pai</li></ul>
+  <p>A <code>margin</code> propriedade é uma pripriedade abreviada para as seguintes proriedades de margem individuais:</p>
+  <ul>
+    <li><code>margin-top</code></li>
+    <li><code>margin-right</code></li>
+    <li><code>margin-bottom</code></li>
+    <li><code>margin-left</code></li></ul>
+    <p>Então, aqui está como funciona:<br>Se a <code>margin</code> proprieadde tiver quatros valores:</p>
+    <ul>
+        <li style="font-weight: bolder;">Margem: 25px 50px 75px 100px</li>
+        <li style="margin-left:50px;">margem superior é 25px</li>
+        <li style="margin-left: 50px;">margem direita é 50px</li>
+        <li style="margin-left: 50px;">margem inferior é 75px</li>
+        <li style="margin-left: 50px;">margem esquerda é 100px</li>
+    </ul>
+      <h2>A propriedade abreviada de margem - 4 valores</h2>
+      <div style="border: 1px black solid; margin: 24px 50px 75px 100px;background-color: lightblue;">
+        Este elemnto div tem uma margem superior de 25px, uma margem direita de 50px, uma margem inferior de 75px uma margem esquerda de 100px.
+      </div>
+      <hr>
+      <br>
+    <p>Se a <code>margin</code> proprieddae tiver três valores:</p>
+    <ul>
+      <li style="font-weight: bolder;">Margem: 25px 50px 75px;</li>
+      <li style="margin-left: 50px;">margem superior é 25px</li>
+      <li style="margin-left: 50px;">As margens direitas e esquerda são 50px</li>
+      <li style="margin-left: 50px;">margem inferior é 75px</li>
+    </ul>
+    <h2>A propriedade abreviada de margem- 3 valores</h2>
+      <div style="margin: 25px 50px 75px;border: 1px black solid; background-color: lightblue;">
+        Este elemento div tem uma margem superior de 25px, uma margem direira e esquerda de 50px e uma margem inferior de 75px.
+      </div>
+      <hr>
+      <br>
+      <ul>
+          <li style="font-weight: bolder;">Margem: 25px 50px</li>
+          <li style="margin-left: 50px;"> as margens superior e inferior</li>
+          <li style="margin-left: 50px;">as margens direita e esquerda são 50px</li>
+      </ul>
+      <h2>A proprieadde abreviada de margem - 2 valores</h2>
+        <div style="margin: 25px 50px; border: 1px black solid; background-color: lightblue;">
+            Este elemento div tem margens superior e inferior de 25px e margens direota e esquerda de 50px.
+        </div>
+        <hr>
+        <br>
+        <p>Se a <code>margin</code> propriedae tiver um valor:</p>
+        <ul>
+          <li style="font-weight: bolder;">Margem: 25px;</li>
+          <li style="margin-left: 59px;">todas as quatros margens são 25px</li>
+        </ul>
+          <h2>A propriedade abreviada de margem - 1 valor</h2>
+        <div style=" background-color: lightblue; border: 1px black solid; margin: 25px;"> 
+            este elemento div tem margens superior, inferior, esquerda e direita de 25px.
+        </div>
+        <hr>
+        <br>
+        <h2>O valor automático</h2>
+        <p>Você pode definir a propriedade margin para <code>auto</code> centralizar horizontalmente o elemento dentro do seu contêiner.</p>
+        <p>o elemento ocupará então a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita.</p>
+          <div style="background-color: lightblue; border: 1px red solid; margin: auto; width: 300px;">
+                Esta div será centralizada horizontalmente porque possui <code>margin: auto;</code>
+          </div>
+          <hr>
+          <br>
+          <h2>O valor herdado</h2>
+          <p>Este exemplo permite que a margem esquerda do elemento  <code>p class="ex1" </p></code> seja herdada do elemento pai <code>div</div></code></p>
+          <div style="border: 1px red solid; margin-left: 100px;">
+            <p style="margin: inherit; width: 300px;border: 1px black solid;">Este parágrafo possui uma margem esquerda herdada(do elemento div).</p>
+          </div>
+
+</body>
+</html>

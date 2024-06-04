@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sombra de texto CSS</title>
+  <style>
+    body {
+        background-color: rgba(128, 128, 128, 0.718);
+        font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+        font-size: 16px;
+        margin-left: 40px;
+    }
+
+    code {
+        background-color: gainsboro;
+        font-weight: bold;
+        color:rgb(255, 57, 7);
+        padding: 2px 3px;
+    }
+    div {
+        background-color: azure;
+        width: 400px;
+        margin: auto;
+      text-align:center;}
+
+    div {
+        border: solid 2px black;
+        margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Sombra de texto</h1>
+    <p>A <code>text-shadow</code> propriedade adiciona sombra ao texto.</p>
+    <p>No seu uso mais simples, você especifica apenas a sombra horizontal (4px) e a sombra vertical (2px):</p>
+    <div>
+      <h1 style="text-shadow: 2px 4px gray;">'Text-shadow' efeito de sombra de texto</h1>
+    </div>
+    <p>A seguir, adicione uma cor (coral à sombra):</p>
+     <div>
+      <h1 style="text-shadow: 2px 4px coral;">Efeito de sombra de texto</h1>
+     </div>
+      <p>Efeito de sombra de texto com desfoque (5px) à sombra:<p>
+        <div>
+        <h1 style="text-shadow: 4px 4px 4px hwb(327 13% 1%);">Efeito de sombra de texto!</h1>
+     </div>
+</body>
+</html>

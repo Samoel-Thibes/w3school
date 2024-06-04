@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alinhamento de texto</title>
+  <style>
+    body {
+        background-color: rgb(103, 103, 99);
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        margin-left: 40px;
+        margin-right: 100px;
+    }
+    code {
+      background-color: rgba(208, 211, 214, 0.847);
+      padding: 2px;
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Alinhamento e direção do texto</h1>
+  <p>Neste capítulo você aprendera sobre as seguintes propriedades:</p>
+    <ul>
+      <li><code>text-align</code></li>
+      <li><code>text-align-last</code></li>
+      <li><code>direction</code></li>
+      <li><code>unicode-bidi</code></li>
+      <li><code>vertical-align</code></li>
+    </ul>
+    <hr><br>
+    <h2>Alinhamento de texto</h2>
+    <p>A <code>text-align</code> propriedade é usada para definir o Alinhamento horizontal de um texto.</p>
+    <p>Um texto pode ser alinhado á esquerda ou à direita, centralizado ou justificado.</p>
+    <p>O exemplo a seguir mostra texto alinhado ao centro e alinhado à esquerda e à direita (o alinhamento à esquerda é o padrão se a direção do texto for da esquerda para a direita e o alinhamento à direita é o padrão se a direção do texto for da direita para a esquerda):</p> 
+    <br>
+    <h1 style="text-align: center;">Heading 1 (center)</h1>
+    <h2 style="text-align: left;">Heading 2 (left)</h2>
+    <h3 style="text-align: right;">Heading 3 (right)</h3>
+    <p>Quando a <code>text-align</code> propriedade está definida como "justificar", cada linha pe esticada para que todas as linhas tenham largura igual a as margens esquerda e direita sejam retas (como em revista e jornais):</p>
+    <div style="border: 1px black solid; padding: 10px; width: 250px; height: 200px; text-align: justify;">
+      Quando era mais jovem e mais vulnerável, meu pai me deu alguns conselhos que venho pensando desde então. 'Sempre que você sentir vontade de criticar alguém', ele me disse, 'lembre-se de que todas as pessoas neste mundo não tiveram as vantagens que você teve.'
+    </div>
+    <hr><br>
+    <h2>Alinhamento de texto por último</h2>
+   <p>A <code>text-align-last</code> propriedade especifia como alinhar a última linha de um texto.</p>
+    <h3>Alinhamento de texto-último:à direita:</h3>
+    <p style="text-align-last: right;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur assumenda, nihil ab quod iure consectetur repellendus asperiores exercitationem dicta necessitatibus. Voluptate sint accusamus eligendi reiciendis similique fuga obcaecati sequi amet.</p>
+    <h3>Alinhamento de texto-último: centro</h3>
+    <p style="text-align-last: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur obcaecati quam. Illum fuga facilis ea, praesentium sed tempore excepturi reprehenderit iure repellat consectetur ut. Provident, nam neque! Dolore, beatae.</p>
+  <h3>Alinhamento de texto-último: justificado</h3>
+    <p style="text-align-last: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus non reiciendis dignissimos voluptatibus nulla velit atque accusamus tempora nostrum cumque, officiis sapiente dolore, aliquam consectetur est architecto quia voluptate error!</p>
+    <hr><br>
+    <h2>Direção do texto</h2>
+    <p>As propriedades <code>direction</code> e <code>unicode-bidi</code> podem ser usadas parar alterar a direção do texto de um elemento:</p>
+    <p>Esta é a direção padrão do texto</p>
+    <p style="direction: rtl; unicode-bidi: bidi-override;">Esta é a direção do texto da direita para a esquerda.</p>
+    <br>
+    <h2>Alinhamneto vertical</h2>
+    <p>A <code>vertical-align</code> propriedade define o alinhamento vertical de um elemento/imagem em um texto:</p>
+    <h3>Alinhamento vertical: linha de base padrão</h3>
+    <p> Uma <img src="https://i.pinimg.com/736x/f4/cf/5b/f4cf5b5191ba52465406ee08a7c349fa.jpg" width="10" height="10"; style="vertical-align: baseline;">imagem com alinhamento padrão</p>
+    <h2>alinhamento vertical: topo do texto:</h2>
+    <p>Um <img src="https://i.pinimg.com/736x/f4/cf/5b/f4cf5b5191ba52465406ee08a7c349fa.jpg" width="10" height="10" style="vertical-align:top;">imagem com alinhamento de texto na parte superior</p>
+    <h2>alinhamento vertical: fundo do texto:</h2>
+    <p>Uma <img src="https://i.pinimg.com/736x/f4/cf/5b/f4cf5b5191ba52465406ee08a7c349fa.jpg" width="10" height="10" style="vertical-align:bottom;">imagem com alinhamento de texto na parte inferior</p>
+    <h2>Alinhamneto vertical: sub:</h2>
+    <p>Uma <img src="https://i.pinimg.com/736x/f4/cf/5b/f4cf5b5191ba52465406ee08a7c349fa.jpg" width="10" height="10" style="vertical-align:sub;">imagem com alinhamento de texto na parte inferior</p>
+    <h2>Alinhamento vertical sup:</h2>
+    <p>Uma <img src="https://i.pinimg.com/736x/f4/cf/5b/f4cf5b5191ba52465406ee08a7c349fa.jpg" width="10" height="10" style="vertical-align: sup;">imagem com um super alinhamento</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preenchimento</title>
+  <style>
+      p+div {
+          padding: 70px;
+          border: 1px solid #4CAF50;
+      }
+      code {
+          background-color: rgba(155, 159, 162, 0.425);
+          padding: 5px;
+          color: red;
+      }
+      .ex1 {
+          background-color: lightblue;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-bottom: 50px;
+          padding-left: 80px;
+          border:  1px black solid;
+      }
+      .ex2 {
+          background-color: lightblue;
+          padding: 25px 50px 75px 100px;
+          border: 1px black solid
+      }
+
+      .ex3 {
+          background-color: lightblue;
+          border: 1px black solid;
+          padding: 25px 50px 75px;
+      }
+
+      .ex4 {
+          background-color: lightblue;
+          border: 1px black solid;
+          padding: 25px 50px;
+      }
+
+      .ex5 {
+          padding: 25px;
+          background-color: lightblue;
+          border: 1px black solid;
+      }
+      .ex6 {
+          background-color:yellow;
+          width: 300px;
+      }
+      .ex7 {
+          background-color: lightblue;
+          width: 300px;
+          padding: 25px;
+      }
+
+      .ex8 {
+          background-color: aquamarine;
+          padding: 25px;
+          width: 300px;
+          box-sizing: border-box;
+      }
+  </style>
+</head>
+<body>
+    <h1>Preenchimento CSS</h1>
+    <p>O preenchimento é usado para criar espaço ao redor do conteúdo de uma elemento, dentro de quaisquer borda definida</p>
+      <div>
+        Este elemento possui preenchimento de 70px.
+      </div>
+      <br>
+      <hr>
+      <h2>Preenchimento - Lados Individuais</h2>
+      <p>CSS possio propriedades para especificar preenchimneto de cada lado de uma elemento:</p>
+        <ul>
+          <li><code>padding-top</code></li>
+          <li>padding-right</li>
+          <li>paddinng-bottom</li>
+          <li>padding-left</li>
+        </ul>
+        <p>Todas as propriedades e preenchimentos podem ter os seguintes valores:</p>
+        <ul>
+          <li><code>comprimento</code> - especifica um preenchimento em px, pt, cm, etc.</li>
+          <li><code>%</code> - especificaum preenchimento em % da largura do elemento que contém</li>
+          <li><code>inherit</code> - especifica que o preenchimento deve ser herdado do elemento pai</li>
+        </ul>
+        <p style="background-color: rgb(206, 238, 92);"><strong>Nota</strong>: Valores negativos não são permitidos.</p>
+        <h2>Usando propriedades de preenchimento Individuais</h2>
+        <div class="ex1
+        ">
+          Este elemento div tem um preenchimento superior de 50px, um preenchimento direito 30px, um preenchimento inferior de 50px e um preenchimento esquerdo de 80px.
+        </div>
+        <h2>Preeenchimento - propriedade abreviada</h2>
+        <p>Para encurtar o código, é possível especificar todas as propriedades de preenchimneto em uma propriedade.</p>
+        <p>A <code>padding</code> propriedade é uma propriedade abreviada para as seguintes propriedades de preenchimento individuais:</p>
+        <ul><li><code>padding-top</code></li>
+        <li><code>padding-right</code></li>
+        <li><code>padding-bottom</code></li>
+        <li><code>padding-left</code></li></ul>
+        <p>Então, aqui está como funciona:<br>
+        Se <code>padding</code> propriedade tiver quatro valores:</p>
+        <ul>
+          <li style="font-weight: bolder;">preenchimneto: 25px 50px 75px 100px</li>
+          <li style="margin-left: 50px;">o preenchimento superior é 25px</li>
+          <li style="margin-left: 50px;">o  preenchimneto direito é 50px</li>
+          <li style="margin-left: 50px;">o preenchimento inferior é 75px</li>
+          <li style="margin-left: 50px;">o preenchimento esquerdo é 100px</li>
+        </ul>
+        <h2>A propriedade abreviada de preenchimento - 4 valores</h2>
+        <div class="ex2">Este elemento div tem um preenchimento superior 25px, um preenchimneto direito de 50px, um preenchimento inferior de 75px 
+          e um preenchimento esquerdo de 100px
+        </div>
+        <p>
+          Se a <code>padding </code>propriede tiver três valores:
+        </p>
+        <ul>
+          <li style="font-weight: bolder;"> preenchimento: 25px 50px 75px;</li>
+          <li style="margin-left: 50px;">o preenchimento superior é 25px
+          </li>
+          <li style="margin-left: 50px;">os preenchimentos direito e esquerdo são 50px</li>
+          <li style="margin-left: 50px;">o preenchimneto inferior é 75px</li>
+        </ul><h2>A propriedade abreviaa de preenchimneto - 3 valores</h2>
+        <div class="ex3">
+          Este elemento div tem um preenchimeneto superior de 25px, um preenchimento direito e esquerdo de 50px e um preenchimneto inferior de 75px.
+        </div>
+        <h2>
+          Se a <code>padding</code> propriedade tiver dois valores:
+        </h2>
+          <ul>
+            <li style="font-weight: bolder;">preenchimento superior e inferior são;</li>
+            <li style="margin-left: 50px;">os Preeenchimento supeiror e inferior são 25px</li>
+            <li  style="margin-left: 50px;">os preeenchimento direito e esquerdo são 50px</li>
+          </ul>
+        <div class="ex4">Este elemento div tem um preenchimeneto supeiror e inferior de 25px e um preenchimneto direito e esquerdo de 50px</div>
+        <br>
+        <hr>
+        <p>Se a <code>padding</code> propriedade tiver um valor:</p>
+        <ul>
+          <li style="font-weight: bolder;">preenchimeneto: 25px</li>
+          <li style="margin-left: 50px;">todos os quatros preenchimentos têm 25px</li>
+        </ul>
+        <h2>A propriedae abreviada de preenchimento - 1 valor</h2>
+        <div class="ex5">
+            Este elemento div tem um preenchimento superior,inferior, esquerdo e direito de 25px.
+        </div>
+        <h2>Preenchimento e largura do elemento</h2>
+        <p>
+          A proriedadee CSS <code>width</code> especifica largura da área de conteúdo do elemento. A área de conteúdo é a parte dentro do preenchimneto, borda e margem de um elemento.
+        </p>
+        <p>Portanto, se um elemento tiver uma largura especificada, o preenchimento adicionado a esse elemento será adicionado à largura total de elemento.
+          Muitas vezes este é um resultado indesejável
+        </p>
+        <h2>Preenchimneto e largura do elemento</h2>
+        <div class="ex6">Esta div tem 300px de largura.</div>
+        <br>
+        <div class="ex7
+        ">A largura desta div é 350px, embora esteja definida como 300px no CSS</div>
+        <p>Para manter a largura em 300px, não importa a quantidade de preenchimneto, você pode usar a <code>box-sizing</code> propriedade. Isto faz com que o elemento mantenha sua largura real; se você aumentar o preenchimento, o espaço de conteúdo disponével diminuirá</p>
+        <h2>Preenchimneto e largura do elemento - com dimensionamento de caixa</h2>
+        <div class="ex6">Esta div tem 300px de largura</div>
+        <br>
+        <div class="ex8">A largura dessta div permanece em 300px, apesar dos 50px de preenchimento total esquerdo e direito, por causa da propriedade <code>box-sizing: border-box.</code></div>
+</body>
+</html>
