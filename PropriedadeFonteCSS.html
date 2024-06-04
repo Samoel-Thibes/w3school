@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedade de fonte CSS</title>
+  <style> 
+  body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-image: linear-gradient(to left, rgb(216, 216, 244), rgb(86, 198, 236) );
+      margin-left: 300px;
+  }
+  code {
+      background-color: lavender;
+      padding: 1px 10px;
+      box-sizing: border-box;
+      color: coral;
+      font-weight: bolder;
+  }
+    .a {
+        font: 20px Arial, sans-serif;
+    }
+    .b {
+        font: italic small-caps bold 12px/30px Georgia,serif;
+    }
+    div {
+        background-color: beige;
+        padding: 2px 8px;
+        width: 400px;
+        margin: auto;
+    }
+    div {
+        border: 1px solid black;
+        border-radius: 3px;
+        box-shadow: 2px 4px 5px gray;
+    }
+    ul+p {
+      display: block;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+    <h1>A propriedade da fonte CSS</h1>
+    <p>Para encutar o código, também é possível especificar todas as propriedades de fonte individuais em uma propriedade</p>
+    <p>A <code>fonte</code> propriedade é uma propriedade abreviada para:</p>
+    <ul>
+      <li><code>font-style</code></li>
+      <li><code>font-variant</code></li>
+      <li><code>font-weight</code></li>
+      <li><code>font-size/ line-height</code></li>
+      <li><code>font-family</code></li>
+    </ul>
+    <p style="background-color: rgb(238, 238, 109);padding: 2px 3px; border: 1px solid black; border-radius: 5px; box-shadow: 6px 2px 4px rgba(0, 0, 0, 0.532); line-height: 22px;"><strong>Nota:</strong>Os valores <code>font-size</code> e <code>font-family</code> são obrigatórios. Se um dos outros valores estiver faltando, seu valor padrão será usado.</p>
+    <p>Use <code>fonte</code> para definir diversas propriedades de fonte em uma declaração:</p>
+    <div>
+        <h2>A propriedade da fonte</h2>
+        <p class="a">Este é um parágrafo. O tamanho da fonte é definido como 20 pixel e a familia da fonte é Arial.</p>
+        <p class="b">Este é uma parágrafo. A fonte está definida como itálico, versalete e negrito, o tamanho da fonte está definido como 12 pixels, a altura da linha está definida como 30 pixels e a família da fonte é Georgia</p>
+    </div>
+</body>
+</html>
