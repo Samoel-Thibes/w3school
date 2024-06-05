@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas CSS</title>
+  <style>
+    * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+        background-color: rgba(127, 255, 212, 0.644);
+    }
+    div {
+      width: 500px;
+      background-color: aliceblue;
+      margin-left: 30px;
+      border: 1px black solid;
+      border-radius: 7px;
+    }
+  main {
+     display: flex;
+     max-width: 400px;
+  }
+  .box {
+      flex: 1;
+      padding: 0px 30px
+    
+  }
+ul.a {
+   list-style-type: circle;
+}
+ul.b {
+    list-style-type: square;
+}
+ol.c {
+    list-style-type: upper-roman;
+}
+ol.d {
+    list-style-type: lower-alpha;
+}
+  </style>
+</head>
+<body>
+  <h1>Listas CSS</h1>
+  <main>
+  <div class="box">
+    <ul>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca Cola</li>
+        <br>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca Cola</li>
+    </ul>
+  </div>
+  <div class="box">
+    <ol>
+      <li>Café</li>
+      <li>Chá</li>
+      <li>Coca Cola</li>
+      <br>
+      <li>Café</li>
+      <li>Chá</li>
+      <li>Coca Cola</li>
+    </ol>
+  </div>
+  </main>
+    <hr><br>
+    <h2>Lista HTML e propriedades de lista CSS</h2>
+    <p>Em HTML, existem dois tipos principais de lista:</p>
+      <ul>
+        <li>listas não ordenadas (ul)- os itens de lsita são marcados com marcadores</li>
+        <li>lista ordenadas (ol)- os itens de lista são marcados com números ou letras</li>
+      </ul>
+  <p>As propriedades da lista CSS permitem:</p>
+  <ul>
+    <li>Defina diferentes marcadores de itens da lista para lista ordenadas</li>
+    <li>Defina diferentes marcadores de itens de lista para lista não ordenadas</li>
+    <li>Defia uma imagem como marcadore de item da lista</li>
+    <li>Adicione cores de fundo a lista e itens de lista</li>
+  </ul>
+  <hr>
+  <br>
+    <h3>Diferentes marcadores de itens de lista</h3>
+   <p>A <code>list-style-type</code> propriedade especifica o tipe de marcador de item de lista. <br><br>
+  O exemplo a seguir mostra alguns dos marcadores de itens de lista disponíveis:</p>
+  <main>
+  <div class="box">
+    <p>Exemplo de listas não ordenadas:</p>
+      <ul class="a">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca Cola</li>
+      </ul>
+      <ul class="b">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+      </ul>
+  </div>
+  <div class="box">
+      <p>Exemplo de lista ordenadas:</p>
+      <ol class="c">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca Cola</li>
+        </ol>
+        <ol class="d">
+        <li>Chá</li>
+        <li>Chá</li>
+        <li>Coca Cola</li>
+      </ol>
+  </div>
+</main>
+</body>
+</html>
