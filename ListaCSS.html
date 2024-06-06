@@ -12,7 +12,7 @@
         background-color: rgba(127, 255, 212, 0.644);
     }
     div {
-      width: 500px;
+      width: 200px;
       background-color: aliceblue;
       margin-left: 30px;
       border: 1px black solid;
@@ -38,6 +38,32 @@ ol.c {
 }
 ol.d {
     list-style-type: lower-alpha;
+}
+
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ol.cor1 {
+    background-color: #ff9999;
+    padding: 20px;
+}
+ul.cor2 {
+    background-color: #3399ff;
+    padding: 20px
+}
+
+.cor1 li {
+  background-color: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+.cor2 li {
+    background-color: #cce5ff;
+    color: darkblue;
+    margin: 7px;
 }
   </style>
 </head>
@@ -114,5 +140,74 @@ ol.d {
       </ol>
   </div>
 </main>
+<hr><br>
+<h5>Uma imagem como marcador de item da lista</h5>
+<p>A <code>list-style-image</code> propriedade especifica uma imagem como marcador de item da lista:</p>
+<ul class="custom">
+  <li>Café</li>
+  <li>Chá</li>
+  <li>Coca-Cola</li>
+</ul>
+ <h2>Posicione os marcadores de item da lista</h2>
+ <p>A <code>list-style-position</code> propriedade especifica a posição dos marcadores de item da lsita (marcadores).</p>
+ <br><p>"posição no estilo de lista: fora;" significa que os marcadores estarão fora do item da lista. 
+  O início de cada linha de um item da lista será alinhado verticalmente. Este é o padro:</p>
+  <ul style="list-style-position: outside;">
+    <li>Café - Uma bebida preparada a partir de grãos de café torrados..</li>
+    <li>Chá</li>
+    <li>Coca Cola</li>
+  </ul>
+  <br> 
+  <ul style="list-style-position: inside;">
+    <li>Café - Uma bebida preparada a partir de grãos de café torrados</li>
+    <li>Chá</li>
+    <li>Coca Cola</li>
+  </ul>
+  <hr><br>
+  <h2>Remover configurações padrão</h2>
+  <p>A <code>list-style-type:none</code> propriedade também pode ser usada para remover os marcadores. Observe que a lista também possui margem e preenchimento padrão. Para remover isso, adicione <code>margin:0</code> e <code>padding:0</code> a ul ou ol:</p>
+  <br>
+  <p>Lista padrão</p>
+  <div>
+    <ul>
+      <li>Café</li>
+      <li>Chá</li>
+      <li>Coca Cola</li>
+    </ul>
+  </div>
+  <p>Remova marcadores, margens e preenchimento da lista:</p>
+  <div>
+    <ul class="demo">
+      <li>Café</li>
+      <li>Chá</li>
+      <li>Coca Cola</li>
+    </ul>
+  </div>
+  <h2>Lista - Propriedade abreviada</h2>
+  <p>A <code>list-sttyle</code> propriedade é uma propriedade abreviada. É usado para definir todas as propriedades da lista em uma declaração:</p>
+  
+  <p>Ao usar a propriedade, a ordem dos valores da propriedade é:</p>
+   <ul>
+    <li><code>list-style-type</code> (se uma imagem de estilo de lista for especifica, o valor desta propriedade será exibido se a imagem por algum motivo não puder ser exibida)</li>
+    <li>
+      <code>list-style-position</code> (especifica se os marcadores de item de lista devem aparecer dentroi ou fora do fluxo de conteúdo)</li>
+     <li><code>list-style-imgage</code> (especifica uma imagem como marcador de item da lista)
+     </li>
+   </ul>
+   <p>Se um dos valores de propriedada acima estiver faltando, o valor padrão da propriedade faltante será inserido, se houver.</p>
+   <hr><br>
+   <h2>Lista de estilos com cores</h2>
+   <p>Também podemos estilizar lista com cores, para torná-las um pouco mais interessantex.</p>
+   <p>Qualquer coisa adicionada à tag ol ou ul afetará a lista inteira, enquanto as propriedades adicionada à tag li afetarão os itens individuais da lista</p>
+   <ol class="cor1">
+    <li>Coffee</li>
+    <li>tea</li>
+    <li>Coca Cola</li>
+   </ol>
+   <ul class="cor2">
+    <li>Coffe</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+   </ul>
 </body>
 </html>
