@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas CSS</title>
+  <style>
+    code {
+        background-color: #ddd;
+        color: red;
+        padding: 3px;
+        font-weight:bold;
+    }
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width:100%;
+    }
+
+    #customers td, #customers  th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    #customers tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+    #customers tr:hover{
+      background-color: #ddd;
+    }
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    .border, th , td {
+        border: 1px solid;
+        padding: 2px;
+    }
+    .largura, th , td {
+      border: 1px solid;
+    }
+    .largura {
+        width: 100%;
+    }
+
+    .nota {
+        background-color: rgba(234, 240, 118, 0.534);
+        padding: 5px 5px;
+        border-radius: 7px;
+    }
+    .collapse, td, th {
+        border: 1px solid
+    }
+    .collapse {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+  </style>
+</head>
+<body>
+    <h1>Uma Tabela</h1>
+    <table id="customers">
+      <tr>
+        <th>Empresa</th>
+        <th>Contato</th>
+        <th>Pais</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Bergluns snabbkop</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Rosland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Konglich Essen</td>
+        <td>Philip Cramer</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Lougling Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>Simone Crowther</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris spécialités</td>
+        <td>Marie Bertrand</td>
+        <td>France</td>
+      </tr>
+    </table>
+    <h2>Bordas da tabela</h2>
+    <p>Para especificar bordas de tabela em CSS, use a <code>border</code> propriedade</p>
+    <p>O exemplo abaixo especifica uma borda sólida para os elementos <code>table</code> <code>th</code> <code>td</code></p>
+    <h3>Adicione uma borda a uma tabela:</h3>
+    <table class="border">
+      <tr>
+        <th>Nomme</th>
+        <th>Sobrenome</th>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>Grifo</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Grifo</td>
+      </tr>
+    </table>
+    <h2>Tabela de largura total</h2>
+    <p>A tabela acima pode parecer pequena em alguns casos. SE você precisar de uma tabela que ocupe toda a tela (largura total) adicione <code>width: 100%</code> ao elemento table.</p>
+    <h3>Tabela de largura total</h3>
+    <table class="largura">
+      <tr>
+        <th>Primeiro nome</th>
+        <th>Sobrenome</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Grifo</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Grifo</td>
+      </tr>
+    </table>
+    <br>
+    <div class="nota">
+      <h3>Fronteiras Duplas</h3>
+      <p>Observe que a tabela dos exemplos acima possui bordas duplas. isso ocorre porque tanto a tabela quanto os elementos th e td possuim bordas separadas. <br>
+      Para remover bordas duplas, veja o exemplo abaixo.</p>
+    </div>
+    <hr><br>
+    <h2>Recolher bordas da tabela</h2>
+    <p>A <code>border-collapse</code> propriedade define se as bordas da tabela devem ser recolhidas em um única borda:</p>
+    <table class="collapse">
+      <tr>
+        <th>Primeiro nome</th>
+        <th>Sobrenome</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Grifo</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Grifo</td>
+      </tr>
+    </table>
+    <p>Se você quiser apenas uma borda ao redor da tabela, especifique apenas a <code>borde</code> propriedade para table</p>
+    <table>
+        <tr>
+          <th>Primeiro nome</th>
+          <th>Sobrenome</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Grifo</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Grifo</td>
+        </tr>
+    </table>
+</body>
+</html>
