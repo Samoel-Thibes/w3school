@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout CSS</title>
+  <style>
+    * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    code {
+        background-color: #aaaa;
+        color: red;
+        padding: 2px;
+        line-height: 32px;
+    }
+     th, td{
+      border: 1px solid black;
+      padding: 7px;
+      font-weight: 500;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(17, 87, 64, 0.685);
+      height: 30px;
+    }
+    .tab {
+        border-collapse: collapse;
+        
+    }
+    tr:nth-child(odd){
+      background-color: #aaaa;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Layout CSS - A propriedade display</h1>
+  <p>A <code>display</code> propriedade é a propriedade CSS importante para controlar o layout</p><hr>
+  <h2>A propriedade de exibição</h2>
+  <p>A <code>display</code> propriedade é usada para especificar como um elemento é mostrado em página da web.</p>
+  <p>Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento. O valor de exibição padrão para a maioria dos elementos é <code>block</code> ou <code>inline</code>.
+  </p>
+  <p>A <code>display</code> propriedade é usada para alterar o comportamento de exibição padrão dos elementos HTML</p>
+  <hr><br>
+  <h2>Elementos em nível de bloco</h2>
+  <p>Um elemento de nível de bloco SEMPRE começa em uma nova linha e ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo que puder).</p>
+  <p style="border: 3px solid green;">O elemento div é um elemento de nível de bloco.</p>
+  <p>Exemplos de elementos em nível de bloco:</p>
+  <ul>
+    <li><code>div</code></li>
+    <li><code>h1 - h6 </code></li>
+    <li><code>formulário</code></li>
+    <li><code>cabeçalho</code></li>
+    <li><code>rodapé</code></li>
+    <li><code>rodapé</code></li>
+    <li><code>p</code></li>
+  </ul>
+<hr><br>
+<h2>Elementos embutidos</h2>
+<p>Um elementos embutido não começa em uma nova linha e ocupa epena a largur necessária.</p>
+<p>Este é <span>um elemento <code>span</code> embutido dentro de</span> um parágrafo. <br>
+Exemplo de elementos embutidos:</p>
+<ul>
+  <li><code>span</code>
+  </li>
+  <li><code>a</code></li>
+  <li><code>img</code></li>
+</ul>
+<hr>
+<h2>Os valores de propriedade de exibição</h2>
+<p>A <code>display</code> propriedade tem muitos valores:</p>
+<table class="tab">
+  <tr>
+    <th>Valores</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>inline:</td>
+    <td>Exibe um elemento como um elemento inline(em linha).</td>
+  </tr>
+  <tr>
+    <td>
+      block:
+    </td>
+    <td>Exibe um elemento como um elemento de bloco, como quebras de linha aontes e depois.</td>
+  </tr>
+  <tr>
+    <td>contents:</td>
+    <td>Faz o contêiner desaparecer, tornando os elementos filhos filhos do elemento no níveç superior do DOM</td>
+  </tr>
+  <tr>
+    <td>flex:</td>
+    <td>Exibe um elemento como um contêiner flexível de nível de bloco</td>
+  </tr>
+  <tr>
+    <td>grid:</td>
+    <td>Exibe um elemento como um contêiner de grade de nível de bloco.</td>
+  </tr>
+<tr>
+  <td>inline-block:</td>
+  <td>Exibe um elemento como um contêiner de bloco em linha. O elemento em si é formatado como um elemento inline, mas você pode aplicar valores de altura e largura.</td>
+</tr>
+<tr>
+  <td>inline-grid:</td>
+  <td>Exibe um elemento como um contêiner de grade de nível inline.</td>
+</tr>
+<tr>
+  <td>inline-table:</td>
+  <td>Exibe o elemento como uma tabela de nível inline.</td>
+</tr>
+<tr>
+  <td>list-item:</td>
+  <td> Faz com que o elemento se comporte como um elemento <code>li</code>.</td>
+</tr>
+<tr>
+  <td>run-in:</td>
+  <td> Exibe um elemento como block ou inline, dependendo do contexto</td>
+</tr>
+<tr>
+  <td>table:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>table</code>.</td>
+</tr>
+<tr>
+  <td>table-caption:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>caption</code></td>
+</tr>
+<tr>
+  <td>table-column-group:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>colgrup</code></td>
+</tr>
+<tr>
+  <td>table-header-group:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>thead</code></td>
+</tr>
+<tr>
+  <td>table-footer-group:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>tfoot</code></td>
+</tr>
+<tr>
+  <td>table-row-group:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>tbody</code></td>
+</tr>
+<tr>
+  <td>table-cell:</td>
+  <td>Faz com que o elemento se comporte como elemento <code>td</code></td>
+</tr>
+<tr>
+  <td>table-column:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>col</code></td>
+</tr>
+<tr>
+  <td>table-row:</td>
+  <td>Faz com que o elemento se comporte como um elemento <code>tr</code></td>
+</tr>
+<tr>
+  <td>none:</td>
+  <td>O elemento é completamente removido (não exibido).</td>
+</tr>
+<tr>
+  <td>initial:</td>
+  <td>Defina esta propriedade para seu valor padão</td>
+</tr>
+<tr>
+  <td>inherit:</td>
+  <td>Herda esta propriedade do elemento pai.</td>
+</tr>
+</table>
+
+</body>
+</html>
