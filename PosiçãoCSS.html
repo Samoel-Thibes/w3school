@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posição CSS</title>
+  <style>
+      div.relative {
+          position: relative;
+          width: 400px;
+          height: 200px;
+          border: 3px solid lightseagreen;
+      }
+
+      div.absolute {
+          position: absolute;
+          top:80px;
+          right: 0px;
+          width: 200px;
+          height: 100px;
+          border: 2px solid lightseagreen;
+      }
+div.conter {
+    width: 300px;
+    height: 300px;
+    background-color: bisque;
+    border: 1px solid rgb(32, 32, 34);
+    overflow-y: scroll;
+    text-align: justify;
+    margin-left: 4px;
+
+}
+.conter p{
+    margin-left: 5px;
+    margin-right: 7%;
+}
+      div.sticky {
+          position:sticky;
+          top: 0;
+          padding: 5px;
+          background-color: rgb(252, 227, 7);
+          color: rgb(17, 16, 16);
+          border: 1px solid rgb(183, 245, 12);
+      }
+  </style>
+</head>
+<body>
+    <h1>Layout CSS- A propriedade position</h1>
+    <p>A <code>position</code> propriedade especifica o tipo de método de poscionamento usdao para um elemento (estático, relativo, fixo, absoluto ou fixo).</p>
+    <hr>
+    <h2>A propriedade da posição</h2>
+    <p>A <code>position</code> propriedade esepecifica o tipo de método de posicionamento usado para um elemento:</p>
+    <ul>
+      <li><code>static</code></li>
+      <li><code>relative</code></li>
+      <li><code>fixed</code></li>
+      <li><code>absolute</code></li>
+      <li><code>sticky</code></li>
+    </ul>
+    <p>Os elementos são então posicionados usando as propriedades superior, inferior, esquerda e direita. Entretanto, essas propriedades não funcionarão a menos que o position propriedade seja definida primeiro. Eles também funcionam de forma diferente dependendo do valor da posição.</p>
+    <hr><br>
+    <h2>posição: estática;</h2>
+    <p>O elementos HTML são posicionados estáticos por padrão. <br><br>
+      Os elementos posicionados estáticos não são afetados pelas propriedades superior, inferior, esquerdo e direita. <br><br>
+      Um elemento with <code>position: static;</code> não posicionado de nenhuma maneira especial; está sempre posicionado de acordo com fluxo normal da página:</p>
+       <h3>Exemplo</h3>
+       <div style="position: static; border: 3px solid green;">
+          Este elemento div possui posição: static;
+       </div>
+       <hr><br>
+       <h2>posição: relativa;</h2>
+       <p>um elemento com <code>position: relative;</code> é posicionado em relação à sua posição normal.</p>
+       <p>Definir as propriedades superior, direita, inferior e esquerda de um elemento relativamente posicionado fará com que ele seja ajustado fora de sua posição normal. Outros conteúdos não serão ajustados para caber em qualquer lacuna deixada pelo elemento.</p>
+       <div style="position: relative; left: 30px; border: 3px solid green;">Este elemento div possui posição: relativa;</div>
+       <hr><br>
+       <h2>posição: fixa;</h2>
+       <p>Um elemento com <code>position: fixed;</code> é posicionado em relaçao à janela de visualização, o que siginifica que ele permanece sempre no mesmo lugar mesmo se a página for rolada. As propriedades superior, direita, inferior e esquerda são usadas para posicionar o elemento.</p>
+       <p>Um elemento fixo não deixa espaço na página onde normalmente estaria localizado.</p> <br><br>
+       <p>observe o elemento fixo no canto inferior direito da página. Aqui está o CSS usado:</p><br>
+       <div style="position: static; bottom: 0; left: 0; width: 300px; border:  3px solid green;">Este elemento div possui posição:fixa:</div>
+       <hr><br>
+       <h2>posição: absoluta;</h2>
+       <p>Um elemento com <code>position: absolute.</code> é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relaçao à janela de visualização, com fixo).</p>
+       <p>No entanto; se um elemento posicionado de forma absoluta mnão tiver anvestrais posicionados, ele usará o corpo do documento e se moverá junto com a rolagem da página.</p>
+       <p style="background-color: rgb(221, 221, 97); width: 300px; border: 1px solid coral;"><strong>Nota:</strong> elementos posicionados de forma absoluta são removidos do fluxo normal e podem se sobrepor a elementos.</p>
+       <div class="relative">
+        Este elemento div possui posição: relativa;
+        <div class="absolute">
+          Este elemento div possui posição: absolute;
+        </div>
+       </div>
+       <hr><br>
+       <h2>posição: pegajosa;</h2>
+       <p>Um elemento com <code>position: sticky;</code> é  posicionado com basa na posição de rolagem do usuário.</p>
+       <p>Um elemento fixo alterna entre <code>relative</code> e <code>fixed,</code> dependendo da posição de rolagem, Ele pe posicionado em relaçao até que uma determinada posiçao de deslocamneto seja atingida na janela de visualização - então ele "gruda" no lugar (como <code>position:fixed;</code>).</p>
+       <div class="conter">
+       <div class="sticky">
+        Aqui um posicionamento sticky
+       </div>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero officia quo facere placeat possimus iusto dignissimos, sunt sequi modi deleniti nemo reprehenderit dolore unde culpa! Sint qui porro praesentium voluptas?</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, placeat ex. Ullam, veritatis delectus modi possimus quos quibusdam aut recusandae pariatur quod nesciunt tempore esse aperiam? Libero fugit dolor repudiandae!</p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque commodi temporibus iusto aperiam, officia a corrupti quo mollitia debitis dolorem expedita nesciunt quae iure excepturi, cumque, ratione accusamus cupiditate!
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium expedita veritatis facere eveniet commodi, consectetur vero nemo ipsa. Quas aliquid doloribus perferendis accusamus sequi fuga adipisci incidunt dolorum vero?</p>
+       </div>
+</body>
+</html>
