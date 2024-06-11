@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout CSS</title>
+  <style>
+    div.conter {
+        position: relative;
+    }
+
+  div.preta {
+      position: relative;
+      z-index: 1;
+      border: 2px solid black;
+      height: 100px;
+      margin: 30px;
+  }
+  div.cinza {
+      position: absolute;
+      z-index: 3;
+      background-color:rgb(178, 184, 190);
+      height: 60px;
+      width: 70%;
+      left: 50px;
+      top: 50px;
+  }
+
+  div.verde {
+      position: absolute;
+      z-index: 2;
+      background-color: lightgreen;
+      width: 35%;
+      left: 270px;
+      top: -15px;
+      height: 100px;
+  }
+  </style>
+</head>
+<body>
+    <h1>Layout CSS - A propriedade z-index</h1>
+      <p>A <code>z-index</code> propriedade especifíca a ordem de pilha de um elemento.</p>
+        <hr><br>
+          <h2>A propriedade do índice z</h2>
+      <p>Quando os elementos são posicionados, eles podem se sobrepor a outros elementos.</p>
+      <p>A <code>z-index</code> propriedade especifica a ordem de pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).</p>
+      <p>Um elemento pode ter uma ordem de pilha positiva ou negativa:</p>
+        <div style="position: relative; border: 2px solid;">
+          <h1>Este é um título</h1>
+            <p>Como a imagem tem um indice z de -1 ela será colocada atras de texto.</p>
+            <img src="https://i.pinimg.com/originals/14/de/51/14de512da694d43aa6586062202b40dd.jpg" alt="imagem texte" width="50px" height="50px" style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+        </div>
+        <p style="background-color: lightgoldenrodyellow; border: 1px solid black; padding: 5px;"><strong>Nota:</strong> <code>z-index</code> funciona apenas em elementos posicionados (posição: absoluta, relativa, fixa, stick) e itens flexíveis (elementos que são filhos diretos de display: elementos flexíveis)</p>
+        <hr><br>
+
+        <h2>Exemplo de índice Z</h2>
+        <p>Um elemento com ordem de pilha maior está sempre acima de um elemento com oredem de pilha menor</p>
+        <div class="conter">
+          <div class="preta">Caixa preta (índice-z:1)</div>
+          <div class="cinza">Caixa cinza (índice-z:3)</div>
+          <div class="verde">Caixa cinza (índice-z:2)</div>
+        </div>
+
+
+</body>
+</html>

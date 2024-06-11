@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estouro</title>
+  <style>
+      body {
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+      code {
+          background-color: rgb(201, 203, 204);
+          color: red;
+          font-weight: bold;
+          padding:0px 6px;
+          
+
+          
+      }
+  </style>
+</head>
+<body>
+    <h1>Layout CSS - Estouro</h1>
+    <p> A <code>overflow</code> propriedade CSS controla o que acontece com o conteúdo que é grande demais para caber em uma área.</p>
+    <div style="overflow: scroll; height: 100px; background-color: lightgreen; border: 2px solid black;">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum laboriosam eum, accusantium suscipit repellendus sit quo amet natus repudiandae officia sapiente animi possimus reprehenderit placeat blanditiis atque. Possimus, earum culpa!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ad totam quae hic enim. Inventore nobis in, tenetur unde eum vitae, quaerat suscipit provident ad voluptatibus ex, amet cum voluptas.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat unde aut debitis, officiis aperiam nihil quibusdam? Hic officia molestias in facilis repudiandae. Quo vitae sapiente aut sint provident nihil impedit?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. At consectetur voluptatum error adipisci quas ratione explicabo voluptates vitae cupiditate! Modi molestiae earum veritatis provident expedita soluta voluptas tempora eligendi repellendus.
+    </div>
+    <h2>Overflow de CSS</h2>
+    <p>A <code>overflow</code> propriedade especifica se o conteúdo deve ser recortado ou adicionadas barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada.</p>
+    <p>A <code>overflow</code> propriedade possui os seguintes valores:</p>
+    <ul>
+        <li><code>visible</code> - Padrão. O Estouro não é cortado. O conteúdo é renderizado fora da caixa do elemento.</li>
+        <li><code>hidden</code> - O estouro será cortado e o restante do conteúdo ficará invisível</li>
+        <li><code>scrool</code> - overflow é cortado e uma barra de rolagem é adicionada para ver o resto do conteúdo.</li>
+        <li><code>auto</code> - SEmelhante a <code>scrool</code> mas adiciona barras de rolagem somente quando necessário.</li>
+    </ul>
+    <div style="background-color: rgb(238, 238, 152); padding: 20px;">
+      <p><strong>Nota:</strong> A <code>overflow</code> propriedade só funciona para elementos de bloco com altura especificada.
+      <br><br>
+    <strong>Nota:</strong> No OS X Lion (no MAac), as  barras de rolagem ficam ocultas por padrão e são mostrada epenas quando usadas (mesmo que "overflow:scroll" esteja definido).</p>
+    </div>
+    <hr><br>
+    <h2>Overflow: visible</h2>
+    <p>Por padrão, o <span style="color: red;">overflow</span> é visivel, o que significa que não é cortado e é renderizado fora da caixa do elemento</p>
+    <div style="background-color: lightsalmon; width: 500px; height:40px; border: 1px solid; overflow: visible;">
+      Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.
+    </div>
+    <br>
+    <hr>
+     <h2>Overflow: hidden</h2>
+      <p>Com o <code>hidden</code> valor, o overflow é cortado e o restante do conteudo fica oculto:</p>
+      <div style="background-color: lightsalmon; overflow: hidden; height: 70px; width: 200px; border: 1px solid black;">Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.</div>
+      <hr><br>
+    <h2>Overflow: scroll</h2>
+      <p>Define o valor como <code>scrool</code> o overflow é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa, Observe que isso adicionará uma barra de rolagem horizontal e verticalmente(mesmo que você não precise dela):</p>
+      <div style="background-color: coral; overflow: scroll; height: 90px; width: 200px;">Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.</div>
+      <hr><br>
+      <h2>Overflow: auto</h2>
+      <p>O <code>auto</code> valor é semelhante a <code>scroll</code> mas adiciona barras de rolagem somente quando necessário:</p>
+      <div style="background-color: coral; overflow: auto; height: 90px; width: 200px;">
+        Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.
+      </div>
+      <hr><br>
+      <h2>Overflow-x e Overflow-y</h2>
+        <p>As propriedades <code>overflow-x</code> e <code>verflow-y</code> especificam se o execesso de conteúdo deve ser alterado apemnas horizontalmente ou verticalmente (ou ambos):</p>
+        <br>
+        <p><code>overflow-x</code> especifica o que fazer com as bordas esquerda/direita do conteúdo. <br>
+        <code>overflow-y</code> especifica o que fazer com as bordas superior/inferior do conteúdo.</p>
+
+</body>
+</html>
