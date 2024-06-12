@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout - clear e clearflix</title>
+  <style>
+    body {
+        color: white;
+        background-color: #15202b;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+    }
+    code {
+        background-color: aliceblue;
+        color: red;
+        font-weight: bold;
+        padding: 0px 3px;
+    }
+    div {
+        border: 3px solid green;
+        padding: 5px;
+        background-color: rgb(202, 212, 221);
+        color: #15202b;
+        text-align: justify;
+        width: 85%;
+        margin: auto;
+    }
+    .img1 {
+        float: right;
+    }
+
+    .img2 {
+        float: right;
+        margin-left:10px;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+    
+    /*Clearfix moderno*/
+    .clearfix2::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+<body>
+  <h1>O hack do clearflix</h1>
+  <p>Se um elemento flutuante for mais alto que o elemento que o contém, ele "transbordará" para fora de seu contêiner. Podemos antão adicionar um hack clerfix para resolver este problema:</p>
+  <p>Esta imagem está flutuando para a direita. Também é mais alto que o elemento que o contém, por isso transborda para fora do seu contêiner</p>
+  <div>
+    <img class="img1" src="https://i.pinimg.com/736x/99/1b/53/991b53f24b0fc0f583d5fd1fe41c14e4.jpg" alt="sapo" width="170" height="170"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  </div>
+
+  <h2 style="clear: right;">Com Clearfix</h2>
+  <p>podemos corrigir isso adicionando uma <code>class=" clearfix"</code> com <code>overflow: auto;</code> para o elemento que contém:</p>
+  <div class="clearfix">
+    <img class="img2" src="https://i.pinimg.com/736x/99/1b/53/991b53f24b0fc0f583d5fd1fe41c14e4.jpg" alt="sapo" width="170" height="170">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nam, hic ratione explicabo in animi tempora, nobis aut perferendis velit ut as
+  </div>
+    <p>O <code>overflow: auto</code>  clearfix funciona bem desde que você consiga manter o controle de suas margens e preenchimento (caso contrário, você poderá ver barras de rolagem). O <strong> novo e moderno hack clearfix</strong>, entretanto, é mais seguro de usar, e o seguinte código é usado pára a maioria das páginas da web:</p>
+    <hr><br>
+      <h2>Com o novo Clearfix moderno</h2>
+      <p>adicione o hack clearfix ao elemento que contém, para corrigir este problema</p>
+      <div class="clearfix2">
+        <img class="img2" src="https://i.pinimg.com/736x/99/1b/53/991b53f24b0fc0f583d5fd1fe41c14e4.jpg" alt="sapo" width="170" height="170">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus laborum repudiandae quibusdam sapiente qui tenetur. Quod mollitia at iste quos, obcaecati earum ut magni esse, in ex corporis sed itaque?
+      </div>
+    </div>
+</body>
+</html>
