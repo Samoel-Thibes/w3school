@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LayoutCSS - flutuante e claro</title>
+  <style> 
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      background-color: rgba(228, 191, 143, 0.493);
+      margin-left: 60px;
+  }
+  code {
+      background-color: lightgray;
+      color: red;
+      font-weight: bold;
+      padding: 0px 4px;
+  }
+
+    img {
+        float: right;
+        margin-left: 30px;
+    }
+    #conter {
+        float: none;
+        border: none;
+        margin-bottom: 70px;
+        
+    }
+    div {
+        float: left;
+        padding: 15px;
+        border-left: 3px solid rgb(7, 51, 172);
+    }
+    .div1 {
+        background-color: red;
+      
+    }
+    .div2 {
+        background-color: yellow;
+    }
+    .div3 {
+        background-color: greenyellow;
+    }
+
+    .div4 {
+        float: left;
+        padding: 10px;
+        border: 3px solid blue;
+    }
+    .div5 {
+        padding: 10px;
+        border: 3px solid red;
+        float: none;
+    }
+
+    .div6 {
+        float: left;
+        padding: 10px;
+        border: 3px solid blue;
+    }
+  
+    .div7 {
+        padding: 10px;
+        border: 3px solid red;
+        clear: left;
+    }
+  </style>
+</head>
+<body>
+ <h1>LayoutCSS - flutuante e claro</h1>
+  <p> A propriedade CSS <code>float</code> especifica como um elemento deve flutuar.</p>
+  <p>A propriedade CSS <code>clear</code> especifica quais elementos podem flutuar ao lado de elemento limpo e em que lado</p><hr><br>
+  <h2>A propriedade flutuante</h2>
+  <p>A <code>float</code> propriedade é usada para posicionar e formar conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.</p>
+  <p>A <code>float</code> propriedade pode ter um dos seguintes valores:</p>
+  <ul>
+    <li><code>left</code> - O elemento flutua à esquerda do seu contêiner</li>
+    <li><code>right</code> - O elemento flutua à direita do seu contêiner</li>
+    <li><code>none</code> - O elemento não flutua (será exibido exatamente onde ocorre no texto). Esta é o padrão</li>
+    <li><code>inherit</code> - O elemento herda o valor float de seu pai</li>
+  </ul>
+    <hr><br>
+      <h2>Exemplo - float: right</h2>
+        <p>O exemplo a seguir especifica que uma imagem deve flutuar para a <strong>direita</strong> em um texto:
+        </p>
+        <p><img src="https://i.pinimg.com/736x/43/83/ca/4383ca29dd8b71d3b264f0f2380b8676.jpg" alt="meme" width="170px" height="170px">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime accusamus corrupti quos eius dignissimos non in cum nam incidunt recusandae iste et aliquid, ab possimus atque deleniti eaque? Tempore, necessitatibus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit magnam, vitae provident, recusandae delectus excepturi eos similique saepe deleniti rerum, fugiat aliquam facere non cum enim cupiditate minima nesciunt tempore!</p>
+        <hr><br>
+        <h2>Exemplo - flutuar div um ao lado do outro</h2>
+          <p>Normalmente, os elementos div serão exibidos uns sobre os outros. No entanto, se usarmos, <code>float: left</code> podemos deixar os elementos flutuatem próximos uns dos outros:</p>
+           <h3>Flutuar um ao lado do outro</h3>
+            <p>Neste exemplo, os três divs irão flutuar um ao lado do outro.</p>
+              <div id="conter">
+                <div class="div1">Div 1</div>
+                <div class="div2">Div 2</div>
+                <div class="div3">Div 3</div>
+              </div>
+              <hr>
+              <h2>CSS Layout - clear and clearfix</h2>
+                <h4>A propriedade clara</h4>
+              <p>Quabdo usarmos a <code>float</code> propriedade e quisermos o próximo elemento abaixo (não à direita ou à  esquerda), teremos que usar a <code>clear</code> propriedade.</p>
+              <p>A <code>clear</code> propriedade pode ter um dos seguintes valores:</p>
+                <ul>
+                  <li><code>none</code> - O elemento não é empurrado abaixo dos elementos flutuantes à esquerda ou à direita. Este é o padrão</li>
+                  <li><code>left</code> - O elemento é empurrado abaixo dos ellementos flutuantes à esquerda</li>
+                  <li><code>right</code> - O elemento é empurrado abaixo dos elementos flutuantes à direita</li>
+                  <li><code>both</code> - O elemento é empurrado abaixo dos elementos flutuantes esquerdo e direito</li>
+                  <li><code>inherit</code> - O elemento herda o valore clear de seu pai</li>
+                </ul>
+        <p>Ao limpar floats, você deve combinar clear com float: Se um elemento flutur para a esquerda, você deve limpar para a esquerda. <br>
+        Seu elemento flutuante continuará, mas o elemento limpo aparecerá abaixo dele na página da web.</p>
+          <h2>Sem clear</h2>
+          <div class="div4">div4</div>
+          <div class="div5">div5 - Observe que div5 depois de div4 no código HTML. No entanto, como a div4 flutua para a esquerda, o texto em div5 flui em torno de div4
+          </div>
+          <h2>Com clear</h2>
+          <div class="div6">div6</div>
+          <div class="div7">div7 - Aqui, <code>clear: left;</code> move div7 para abaixo da div6 flutuante. O valore "left" limpa os elementos flutuados para a esquerda. Você também pode limpar "right" e "both".</div>
+</body>
+</html>
