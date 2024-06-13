@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout CC - Exemplos flutuantes</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: rgb(33, 41, 53);
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+    .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+        color: black;
+        border: 1px solid coral;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        margin-bottom: 20px;
+    }
+    .img-conter {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li {
+      float: left;
+    }
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 15px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    .active {
+        background-color: rgb(248, 113, 3);
+    }
+    code {
+        background-color: #bbb;
+        color: red;
+        font-weight: bold;
+        padding: 0px 4px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Layout CSS - Exemplos flutuantes</h1>
+      <p>Com a <code>float</code> propriedade, é facil caixas de conteúdo lado a lado:</p>
+    <h2>Grade de Caixas</h2>
+      <p>Caixas flutuantes lado a lado:</p>
+      <div class="clearfix">
+        <div class="box" style="background-color: #bbb;">
+          <p>Algum texto dentro da caixa</p>
+        </div>
+        <div class="box" style="background-color:#ccc;">
+          <p>Algum texto dentro da caixa</p>
+        </div>
+        <div class="box" style="background-color: #ddd;">
+          <p>Algum texto dentro da caixa</p>
+        </div>
+      </div>
+      <div style="background-color:#fff4a3; color: black; padding: 3px 4px;">
+        <p><strong>Nota:</strong> Aqui, usamos o hack clearfix para cuidar do fluxo do layout. <br>Também usamos a propriedade <code>box-sizing</code> para garantir que a caixa não quebre devido ao preenchimento extra.</p>
+        <p>
+          <strong>O que é dimensionamento de caixa</strong>
+        </p>
+        <p>Você pode crir facilmente três caixas flutuantes lado a lado. Entretato, quando Você adiciona algo que aumente a largura de cada caixa (por exemplo, preenchimento ou bordas), a caixa quebra. A <i style="color: red;">box-sizing</i> propriedade nos permite incluir o preenchimento e a borda a largura ( e altura) total da caixa, garantindo que o preenchimento fique dentro da caixa e não quebre.</p>
+      </div>
+      <br><hr><br>
+      <h2>Imagens lado a lado</h2>
+      <p>Flutue as imagens lado a lado:</p>
+      <div class="clearfix">
+
+        <div class="img-conter">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="" style="width: 100%;">
+        </div>
+
+        <div class="img-conter">
+          <img src="https://www.w3schools.com/css/img_forest.jpg" alt="" width="100%">
+        </div>
+
+        <div class="img-conter">
+          <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="" width="100%">
+        </div>
+      </div>
+      <p>Obeserve que também usamos o hack clearfix para cuidar do fluxo do layout e adicionamos a propriedade box-sizing para garantir que o contêiner da imagem não quebre devido ao preenchimento extra</p>
+      <hr><br>
+      <h2>Menu de navegação com float</h2>
+      <p>Você também pode usar <code>float</code> lista da hiperlinks para criar um menu horizontal:</p>
+        <ul>
+          <li> <a href="#home" class="active">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+</body>
+</html>
