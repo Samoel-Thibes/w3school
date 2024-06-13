@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout flutuante</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+      header, footer {
+          color: aliceblue;
+          background-color: gray;
+          padding: 15px;
+      }
+      .colum {
+          float: left;
+          padding: 15px;
+      }
+    .clearfix::after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .menu {
+        width: 25%;
+    }
+    .conter {
+        width: 75%;
+    }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #33b5e5;
+        color: white;
+    }
+    .menu li:hover {
+        background-color: #09c;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <h1>Chania</h1>
+    </header>
+    <div class="clearfix">
+      <div class="menu colum">
+        <ul>
+        <li>O voo</li>
+        <li>A cidade</li>
+        <li>A ilha</li>
+        <li>A comida</li>
+          </ul>
+      </div>
+        <div class="conter colum">
+      <h2>A cidade</h2>
+        <p>Chania é a capital da região de Chania, na ilha de Creta. A cidade pode ser dividida em dua partex, a cidade velha e a cidade moderna.</p>
+        <p>Você aprenderá mais sobre layiut de web a páginas da web responsivas em um capítulo posterior.</p>
+        </div>
+    </div>
+  <footer>Texto de rodapá</footer>
+</body>
+</html>
