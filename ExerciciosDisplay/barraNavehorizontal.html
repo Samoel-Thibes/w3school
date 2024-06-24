@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Navi</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: rgb(56, 126, 60);
+        padding: 10px 10px;
+    }
+    li.inline {
+        display: inline;
+    }
+    .inline a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .float {
+        background-color: lightblue;
+        border: 1px solid rgb(128, 235, 229);
+    }
+  </style>
+</head>
+<body>
+    <h1>Barra de navegação horizontal</h1>
+      <p>Existem duas maneiras de criar uma barra de navegaçao horizintal. usando itens de lista <strong>embutidos</strong> ou <strong>flutuantes</strong>.</p>
+      <h4>itens da lista embutida</h4>
+      <p>Uma maneira de construit uma barra de navegação horizontal é especificar os elementos <code>li</code> como embutidos. além di código "padrão".</p>
+      <div class="embutido">
+        <ul>
+          <li class="inline"><a href="#">Home</a></li>
+          <li class="inline"><a href="#">News</a></li>
+          <li class="inline"><a href="#">Contact</a></li>
+          <li class="inline"><a href="#">About</a></li>
+        </ul>
+      </div>
+      <h4>Exemplo explicado:</h4>
+      <p><code>display: inline;</code> - Por padrão, os elementos <code>li</code> são elementos de bloco. Aqui, removemos as quebras de linha antes e depois da cada item da lista, para exibi-lis em uma linha</p>
+</body>
+</html>

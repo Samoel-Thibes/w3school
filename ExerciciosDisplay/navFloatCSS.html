@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itens de lsita flutuante</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+    code {
+        background-color:rgb(207, 207, 201);
+        color: red;
+        padding: 0px 2%;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+    li {
+        float: left;
+        border-right: 1px solid rgb(173, 169, 169);
+    }
+    li:last-child {
+        border-right: none;
+    }
+    a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+        text-decoration: none;
+       
+    }
+    a:hover {
+        background-color: rgb(45, 92, 76);
+        color: #dddddd;
+    }
+  
+  </style>
+</head>
+<body>
+    <h1>Itens de lista flutuante</h1>
+    <p>Outra maneira de criar uma barra de navegção horizontal é flutuar os elementos <code>li</code> e especificar uma layout para os links</p>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <p><strong>Nota:</strong>Se !DOCTYPE não for especificado, itens flutuantes poderão produzir resultados inesperados.</p>
+    <p>Uma cor de fundo é adicionada aos links para mostrar a área do link, Toda a área do link é clicavel, não apenas o texto.</p>
+    <p><strong>Nota:</strong> <code>overflow:hidden</code> é adicionando ao elemento ul para evitar que os elementos li saiam da lista.</p>
+</body>
+</html>
